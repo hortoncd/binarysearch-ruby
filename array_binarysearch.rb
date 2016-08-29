@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 # Version of binary search implemented by extending the Array class
 # for shits and giggles
 class Array

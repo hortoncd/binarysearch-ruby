@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 # A class to implement binary search rather than monkey patching class Array
 class BinarySearch
   attr_accessor :array
