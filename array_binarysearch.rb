@@ -1,6 +1,7 @@
 # Version of binary search implemented by extending the Array class
 # for shits and giggles
-class Array
+
+module ArrayExtensions
   # Implements the binary search algorithm on an array of ints
   # (although being ruby, it probably works for more than ints).
   # Assumption is that the array is already sorted.
@@ -23,4 +24,8 @@ class Array
   def binary_search(key)
     return binsearch(0, self.length - 1, key)
   end
+end
+
+class Array
+  prepend ArrayExtensions
 end
